@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Public Sans', sans-serif;
+    background-color: #fafafa;
+}
+
+h1 {
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 40px;
+    letter-spacing: -0.36px;
+    line-height: 42px;
+    color: #33323D;
+    margin: 0 0 32px 0;
+}
+
+p {
+    font-size: 16px;
+    line-height: 30px;
+    color: #33323D;
+}
+
+.genericButton {
+    appearance: none;
+    background-color: #FAFAFA;
+    font-size: 12px;
+    color: #33323D;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    border: solid 1px #33323D;
+    padding: 17px 32px;
+    transition: background-color 0.2s ease-in, color 0.2s ease-out;
+}
+
+.genericButton:hover {
+    background-color: #33323D;
+    color: #fff;
+}
+/*-------------------------------------------------------------------------------------
+Header Section
+-------------------------------------------------------------------------------------*/
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 32px 40px 32px;
+    position: relative;
+    /* border-bottom: solid 1px #EAEAEB; */
+}
+
+.close {
+    display: none;
+}
+
+nav {
+    position: absolute;
+    top: 88px;
+    right: 32px;
+    z-index: 100;
+    background-color: #33323D;
+    padding: 40px 65px;
+    text-align: center;
+
+    display: none;
+}
+
+nav li {
+    list-style-type: none;
+    margin: 0 0 32px 0;
+}
+
+nav li:last-of-type {
+    margin-bottom: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+main {
+    padding: 0 32px;
+}
+
+/*-------------------------------------------------------------------------------------
+Hero Section
+-------------------------------------------------------------------------------------*/
+#hero {
+    margin: 0 0 96px 0;
+}
+
+.heroImage { 
+    height: 311px;
+    width: 100%;
+    margin: 0 0 24px 0;
+    background-image: url('./images/homepage/mobile/image-homepage-hero@2x.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.aboutButton {
+    text-decoration: none;
+}
+
+.heroInfo button {
+    appearance: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    background-color: #203A4C;
+}
+
+button span {
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.arrows {
+    height: 48px;
+    width: 48px;
+    background-color: #1D3444;
+    background-image: url('./images/icons/down-arrows.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*-------------------------------------------------------------------------------------
+About Section
+-------------------------------------------------------------------------------------*/
+.profilePhoto {
+    height: 346px;
+    width: 100%;
+    background-image: url('./images/homepage/mobile/image-homepage-profile@2x.jpg');
+    background-size: cover;
+    margin: 0 0 32px 0;
+}
+
+.aboutInfo p {
+    margin-bottom: 24px;
+}
+
+.aboutInfo {
+    border-top: solid 1px #EAEAEB;
+    border-bottom: solid 1px #EAEAEB;
+    padding: 32px 0;
+}
+
+/*-------------------------------------------------------------------------------------
+Contact Section
+-------------------------------------------------------------------------------------*/
+#contact {
+    margin: 80px 0 80px 0;
+    text-align: center;
+}
+
+footer {
+    padding: 56px 0;
+    text-align: center;
+    background-color: #33323D;
+}
+
+footer ul {
+    margin: 40px 0 40px 0;
+}
+
+footer ul li {
+    list-style-type: none;
+    margin: 0 0 32px 0;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.socials {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
