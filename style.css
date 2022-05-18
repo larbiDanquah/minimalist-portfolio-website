@@ -369,3 +369,78 @@ h2 {
     background-image: url('./images/detail/mobile/image-fylo-preview-2@2x.jpg');
     background-size: cover;
 }
+
+.contact {
+    border-top: solid 1px #EAEAEB;
+    border-bottom: solid 1px #EAEAEB;
+    padding: 24px 0;
+    margin: 0 0 32px 0;
+}
+
+.contactInfo {
+    margin: 0 0 24px 0;
+}
+
+form {
+    margin: 0 0 80px 0;
+}
+
+form input, textarea {
+    width: 100%;
+    border: none;
+    background-color: #EAEAEB;
+    padding: 18px 0 18px 16px;
+    color: #33323D;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 13px;
+    outline: none;
+}
+
+.name, .email, .message {
+    margin-bottom: 24px;
+}
+
+textarea {
+    resize: none;
+}
+
+form input:focus, textarea:focus {
+    border: solid 1px #5FB4A2;
+}
+
+form input::placeholder, textarea::placeholder {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 13px;
+    color: #A1A1A6;
+}
+
+form label {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #33323D;
+    line-height: 30px;
+}
+
+form button {
+    border: none;
+    background-color: #203A4C;
+    width: 200px;
+    height: 48px;
+    font-family: 'Public Sans', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.error {
+    border: solid 1px #F43030;
+}
+
+.nameError, .emailError, .messageError {
+    color: #F43030;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    display: none;
+}
