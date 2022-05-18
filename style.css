@@ -196,3 +196,130 @@ footer ul li a {
     align-items: center;
     gap: 15px;
 }
+
+/*-------------------------------------------------------------------------------------
+Portfolio Section
+-------------------------------------------------------------------------------------*/
+.manage {
+    height: 288px;
+    width: 100%;
+    background-image: url('./images/portfolio/mobile/image-portfolio-manage@2x.jpg');
+    background-size: cover;
+    margin-bottom: 32px;
+}
+
+.bookmark {
+    height: 288px;
+    width: 100%;
+    background-image: url('./images/portfolio/mobile/image-portfolio-bookmark@2x.jpg');
+    background-size: cover;
+    margin-bottom: 32px;
+}
+
+.insure {
+    height: 288px;
+    width: 100%;
+    background-image: url('./images/portfolio/mobile/image-portfolio-insure@2x.jpg');
+    background-size: cover;
+    margin-bottom: 32px;
+}
+
+.fylo {
+    height: 288px;
+    width: 100%;
+    background-image: url('./images/portfolio/mobile/image-portfolio-fylo@2x.jpg');
+    background-size: cover;
+    margin-bottom: 32px;
+}
+
+/*-------------------------------------------------------------------------------------
+Details Section
+-------------------------------------------------------------------------------------*/
+.tech {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #5FB4A2;
+}
+
+.tech:last-of-type {
+    margin-bottom: 24px;
+}
+
+.projectDetails {
+    margin: 48px 0 64px 0;
+}
+
+h2 {
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: #33323D;
+    margin: 0 0 28px 0;
+}
+
+.projectDetails p {
+    margin-bottom: 40px;
+}
+
+.preview {
+    height: 197px;
+    width: 100%;
+    margin: 0 0 32px 0;
+}
+
+.preview:last-of-type {
+    margin-bottom: 0;
+}
+
+.detailProject {
+    height: 140px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.manageDetail {
+    background-image: url('./images/detail/mobile/image-manage-hero@2x.jpg');
+    background-size: cover;
+}
+
+.managePreview1 {
+    background-image: url('./images/detail/mobile/image-manage-preview-1@2x.jpg');
+    background-size: cover;
+}
+
+.managePreview2 {
+    background-image: url('./images/detail/mobile/image-manage-preview-2@2x.jpg');
+    background-size: cover;
+}
+
+.paginator {
+    border-top: solid 1px #EAEAEB;
+    border-bottom: solid 1px #EAEAEB;
+    display: flex;
+    justify-content: space-between;
+}
+
+.paginator a {
+    text-decoration: none;
+}
+
+.previous {
+    text-align: left;
+    padding: 24px 0;
+}
+
+.line {
+    width: 1px;
+    height: 167px;
+    background-color: #EAEAEB;
+}
+
+.next {
+    text-align: right;
+    padding: 24px 0;
+}
+
+.paginator h2 {
+    margin: 15px 0 10px 0;
+}
