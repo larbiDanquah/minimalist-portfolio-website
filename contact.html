@@ -57,19 +57,20 @@
     <form action="">
       <div class="name">
         <label for="name">Name</label><br>
-        <input type="text" placeholder="Jane Appleseed">
+        <input id="name" type="text" placeholder="Jane Appleseed">
         <span class="nameError"><em>This field is required</em></span>
       </div>
     
       <div class="email">
         <label for="email">Email</label><br>
-        <input type="email" placeholder="email@example.com">
+        <input id="email" type="email" placeholder="email@example.com">
         <span class="emailError"><em>This field is required</em></span>
+        <span class="emailError emailValidation"><em>Please enter a valid email</em></span>
       </div>
 
       <div class="message">
         <label for="message">Message</label><br>
-        <textarea name="message" placeholder="How can I help?" rows="5"></textarea>
+        <textarea id="message" name="message" placeholder="How can I help?" rows="5"></textarea>
         <span class="messageError"><em>This field is required</em></span>
       </div>
 

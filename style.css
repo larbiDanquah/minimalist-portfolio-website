@@ -444,3 +444,7 @@ form button {
     font-weight: 700;
     display: none;
 }
+
+.emailValidation {
+    display: none;
+}
