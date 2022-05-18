@@ -339,3 +339,18 @@ h2 {
     background-image: url('./images/detail/mobile/image-bookmark-preview-2@2x.jpg');
     background-size: cover;
 }
+
+.insureDetail {
+    background-image: url('./images/detail/mobile/image-insure-hero@2x.jpg');
+    background-size: cover;
+}
+
+.insurePreview1 {
+    background-image: url('./images/detail/mobile/image-insure-preview-1@2x.jpg');
+    background-size: cover;
+}
+
+.insurePreview2 {
+    background-image: url('./images/detail/mobile/image-insure-preview-2@2x.jpg');
+    background-size: cover;
+}
