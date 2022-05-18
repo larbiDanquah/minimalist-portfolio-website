@@ -354,3 +354,18 @@ h2 {
     background-image: url('./images/detail/mobile/image-insure-preview-2@2x.jpg');
     background-size: cover;
 }
+
+.fyloDetail {
+    background-image: url('./images/detail/mobile/image-fylo-hero@2x.jpg');
+    background-size: cover;
+}
+
+.fyloPreview1 {
+    background-image: url('./images/detail/mobile/image-fylo-preview-1@2x.jpg');
+    background-size: cover;
+}
+
+.fyloPreview2 {
+    background-image: url('./images/detail/mobile/image-fylo-preview-2@2x.jpg');
+    background-size: cover;
+}
