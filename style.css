@@ -757,7 +757,7 @@ Tablet Media Queries
 /*-------------------------------------------------------------------------------------
 Desktop Media Queries
 -------------------------------------------------------------------------------------*/
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1160px) {
     header {
         height: 150px;
     }
@@ -916,5 +916,21 @@ Desktop Media Queries
     }
     .fyloPreview2 {
         background-image: url('./images/detail/desktop/image-fylo-preview-2@2x.jpg');
+    }
+
+    .contact {
+        margin: 40px 0 0 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contactRight {
+        width: 635px;
+    }
+
+    .inTouch {
+        padding: 48px 0 0 0;
+        display: flex;
+        justify-content: space-between;
     }
 }
