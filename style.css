@@ -46,19 +46,23 @@ Header Section
 -------------------------------------------------------------------------------------*/
 header {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 32px 32px 40px 32px;
     position: relative;
     /* border-bottom: solid 1px #EAEAEB; */
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1111px;
 }
 
 .close {
     display: none;
 }
 
-nav {
+.navigation {
     position: absolute;
     top: 88px;
     right: 32px;
@@ -70,16 +74,16 @@ nav {
     display: none;
 }
 
-nav li {
+.navigation li {
     list-style-type: none;
     margin: 0 0 32px 0;
 }
 
-nav li:last-of-type {
+.navigation li:last-of-type {
     margin-bottom: 0;
 }
 
-nav a {
+.navigation a {
     text-decoration: none;
     color: #fff;
     font-size: 12px;
@@ -87,8 +91,36 @@ nav a {
     letter-spacing: 2px;
 }
 
+/* Tablet Desktop nav */
+.tablet-desktop {
+    display: none;
+}
+
+.tablet-desktop ul {
+    display: flex;
+    gap: 42px;
+}
+
+.tablet-desktop ul li {
+    list-style: none;
+}
+
+.tablet-desktop ul li a {
+    text-decoration: none;
+    color: #33323D;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.tablet-desktop ul li a.currentPage {
+    color: #5FB4A2;
+}
+
 main {
-    padding: 0 32px;
+    margin: 0 32px;
+    max-width: 1111px;
 }
 
 /*-------------------------------------------------------------------------------------
@@ -167,10 +199,25 @@ Contact Section
     text-align: center;
 }
 
+.hiddenLine {
+    display: none;
+}
+
+/*-------------------------------------------------------------------------------------
+Footer Section
+-------------------------------------------------------------------------------------*/
 footer {
     padding: 56px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     background-color: #33323D;
+}
+
+.footerContainer {
+    max-width: 1111px;
 }
 
 footer ul {
@@ -447,4 +494,142 @@ form button {
 
 .emailValidation {
     display: none;
+}
+
+/*-------------------------------------------------------------------------------------
+Tablet Media Queries
+-------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) {
+    header .menu {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 143px;
+    }
+
+    .tablet-desktop {
+        display: block;
+    }
+
+    .heroImage {
+        display: none;
+    }
+
+    #hero {
+        height: 600px;
+        background: url('./images/homepage/tablet/image-homepage-hero@2x.jpg');
+        background-size: cover;
+        position: relative;
+    }
+    
+    .heroInfo {
+        width: 514px;
+        background-color: #FAFAFA;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 56px 56px 0 0;
+    }
+
+    #about {
+        display: flex;
+        justify-content: space-between;
+        height: 600px;
+    }
+
+    .profilePhoto {
+        width: 45%;
+        height: 100%;
+        background-image: url('./images/homepage/mobile/image-homepage-profile@2x.jpg');
+        background-size: cover;
+        background-position: 80%;
+    }
+
+    .aboutInfo {
+        margin: 0;
+        width: 339px;
+    }
+
+    #contact {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #contact h1 {
+        text-align: left;
+        width: 350px;
+    }
+
+    .hiddenLine {
+        display: block;
+        width: 113px;
+        height: 1px;
+        background-color: #EAEAEB;
+    }
+
+    footer {
+        padding: 30px 40px;
+    }
+
+    footer ul {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 42px;
+        margin: 0;
+    }
+
+    footer ul li {
+        margin: 0;
+    }
+
+    .left {
+        display: flex;
+        gap: 48px;
+    }
+
+    .footerContainer {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .portfolioItem {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 418px;
+        margin: 0 0 80px 0;
+    }
+
+    .portfolioItem:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .manage, .bookmark, .insure, .fylo {
+        width: 339px;
+        height: 314px;
+    }
+
+    .manage {
+        background-image: url('./images/portfolio/tablet/image-portfolio-manage@2x.jpg');
+    }
+
+    .bookmark {
+        background-image: url('./images/portfolio/tablet/image-portfolio-bookmark@2x.jpg');
+    }
+
+    .insure {
+        background-image: url('./images/portfolio/tablet/image-portfolio-insure@2x.jpg');
+    }
+
+    .fylo {
+        background-image: url('./images/portfolio/tablet/image-portfolio-fylo@2x.jpg');
+    }
 }
