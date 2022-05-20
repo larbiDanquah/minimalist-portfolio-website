@@ -328,6 +328,10 @@ h2 {
     margin: 0 0 28px 0;
 }
 
+.desktopProjectDetails {
+    display: none;
+}
+
 .projectDetails p {
     margin-bottom: 40px;
 }
