@@ -24,6 +24,10 @@ p {
     color: #33323D;
 }
 
+a, button {
+    cursor: pointer;
+}
+
 .genericButton {
     appearance: none;
     background-color: #FAFAFA;
@@ -673,6 +677,10 @@ Tablet Media Queries
         display: none;
     }
 
+    .desktopDetail {
+        display: none;
+    }
+
     .tabletDetail {
         border-top: solid 1px #EAEAEB;
         border-bottom: solid 1px #EAEAEB;
@@ -743,5 +751,170 @@ Tablet Media Queries
         justify-content: space-between;
         align-items: center;
         gap: 32px;
+    }
+}
+
+/*-------------------------------------------------------------------------------------
+Desktop Media Queries
+-------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 1000px) {
+    header {
+        height: 150px;
+    }
+
+    main {
+        padding: 0;
+        position: relative;
+    }
+    #hero {
+        width: 1110px;
+        background-image: url('./images/homepage/desktop/image-homepage-hero@2x.jpg');
+        margin: 0 0 150px 0;
+    }
+
+    .heroInfo {
+        width: 445px;
+    }
+
+    .heroInfo h1 {
+        font-size: 50px;
+        line-height: 50px;
+        margin: 0 0 50px 0;
+    }
+
+    #about {
+        width: 1015px;
+        margin-bottom: 150px;
+    }
+
+    .profilePhoto {
+        width: 540px;
+        background-image: url('./images/homepage/desktop/image-homepage-profile@2x.jpg');
+    }
+
+    .hiddenLine {
+        width: 534px;
+    }
+
+    .portfolioItem {
+        width: 1015px;
+        height: 500px;
+        /* margin: 0 0 80px 0; */
+    }
+
+    .portfolioItem:nth-child(even) {
+        position: relative;
+        left: 95px;
+    }
+
+    .manage, .bookmark, .insure, .fylo {
+        width: 540px;
+        height: 100%;
+        margin: 0;
+    }
+
+    .manage {
+        background-image: url('./images/portfolio/desktop/image-portfolio-manage@2x.jpg');
+    }
+
+    .bookmark {
+        background-image: url('./images/portfolio/desktop/image-portfolio-bookmark@2x.jpg');
+    }
+
+    .insure {
+        background-image: url('./images/portfolio/desktop/image-portfolio-insure@2x.jpg');
+    }
+
+    .fylo {
+        background-image: url('./images/portfolio/desktop/image-portfolio-fylo@2x.jpg');
+    }
+
+    .portfolioItem .aboutInfo {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .detailProject {
+        height: 500px;
+    }
+
+    .manageDetail {
+        background-image: url('./images/detail/desktop/image-manage-hero@2x.jpg');
+    }
+
+    .tabletDetail {
+        display: none;
+    }
+
+    .desktopDetail {
+        display: block;
+        height: 498px;
+    }
+
+    .projectDetails {
+        display: none;
+    }
+
+    .desktopProjectDetails {
+        margin: 115px 0 64px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .desktopDetails {
+        width: 635px;
+    }
+
+    .desktopDetails h2 {
+        color: #33323D;
+        margin: 40px 0 30px 0;
+    }
+
+    .preview {
+        height: 400px;
+    }
+
+    .managePreview1 {
+        background-image: url('./images/detail/desktop/image-manage-preview-1@2x.jpg');
+    }
+
+    .managePreview2 {
+        background-image: url('./images/detail/desktop/image-manage-preview-2@2x.jpg');
+    }
+
+    .bookmarkDetail {
+        background-image: url('./images/detail/desktop/image-bookmark-hero@2x.jpg');
+    }
+
+    .bookmarkPreview1 {
+        background-image: url('./images/detail/desktop/image-bookmark-preview-1@2x.jpg');
+    }
+
+    .bookmarkPreview1 {
+        background-image: url('./images/detail/desktop/image-bookmark-preview-2@2x.jpg');
+    }
+
+    .insureDetail {
+        background-image: url('./images/detail/desktop/image-insure-hero@2x.jpg');
+    }
+
+    .insurePreview1 {
+        background-image: url('./images/detail/desktop/image-insure-preview-1@2x.jpg');
+    }
+    .insurePreview2 {
+        background-image: url('./images/detail/desktop/image-insure-preview-2@2x.jpg');
+    }
+
+    .fyloDetail {
+        background-image: url('./images/detail/desktop/image-fylo-hero@2x.jpg');
+    }
+
+    .fyloPreview1 {
+        background-image: url('./images/detail/desktop/image-fylo-preview-1@2x.jpg');
+    }
+    .fyloPreview2 {
+        background-image: url('./images/detail/desktop/image-fylo-preview-2@2x.jpg');
     }
 }
