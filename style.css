@@ -191,6 +191,10 @@ About Section
     padding: 32px 0;
 }
 
+.tabletDetail {
+    display: none;
+}
+
 /*-------------------------------------------------------------------------------------
 Contact Section
 -------------------------------------------------------------------------------------*/
@@ -631,5 +635,94 @@ Tablet Media Queries
 
     .fylo {
         background-image: url('./images/portfolio/tablet/image-portfolio-fylo@2x.jpg');
+    }
+
+    .portfolioDetail {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .detailProject {
+        height: 310px;
+    }
+
+    .manageDetail {
+        background-image: url('./images/detail/tablet/image-manage-hero@2x.jpg');
+    }
+
+    .mobileDetail {
+        display: none;
+    }
+
+    .tabletDetail {
+        border-top: solid 1px #EAEAEB;
+        border-bottom: solid 1px #EAEAEB;
+        padding: 32px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .tabletDetail p {
+        width: 340px;
+    }
+
+    .preview {
+        height: 434px;
+    }
+
+    .managePreview1 {
+        background-image: url('./images/detail/tablet/image-manage-preview-1@2x.jpg');
+    }
+    .managePreview2 {
+        background-image: url('./images/detail/tablet/image-manage-preview-2@2x.jpg');
+    }
+
+    .bookmarkDetail {
+        background-image: url('./images/detail/tablet/image-bookmark-hero@2x.jpg');
+    }
+
+    .bookmarkPreview1 {
+        background-image: url('./images/detail/tablet/image-bookmark-preview-1@2x.jpg');
+    }
+
+    .bookmarkPreview2 {
+        background-image: url('./images/detail/tablet/image-bookmark-preview-2@2x.jpg');
+    }
+
+    .insureDetail {
+        background-image: url('./images/detail/tablet/image-insure-hero@2x.jpg');
+    }
+    .insurePreview1 {
+        background-image: url('./images/detail/tablet/image-insure-preview-1@2x.jpg');
+    }
+    .insurePreview2 {
+        background-image: url('./images/detail/tablet/image-insure-preview-2@2x.jpg');
+    }
+
+    .fyloDetail {
+        background-image: url('./images/detail/tablet/image-fylo-hero@2x.jpg');
+    }
+    .fyloPreview1 {
+        background-image: url('./images/detail/tablet/image-fylo-preview-1@2x.jpg');
+    }
+    .fyloPreview2 {
+        background-image: url('./images/detail/tablet/image-fylo-preview-2@2x.jpg');
+    }
+
+    .previous {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .next {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        gap: 32px;
     }
 }
