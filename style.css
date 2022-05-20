@@ -52,10 +52,12 @@ header {
 }
 
 .headerContainer {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1111px;
+    margin: 0 auto;
 }
 
 .close {
@@ -119,8 +121,9 @@ header {
 }
 
 main {
-    margin: 0 32px;
+    margin: 0 auto;
     max-width: 1111px;
+    padding: 0 32px;
 }
 
 /*-------------------------------------------------------------------------------------
@@ -145,11 +148,22 @@ Hero Section
 }
 
 .heroInfo button {
+    cursor: pointer;
     appearance: none;
     border: none;
     display: flex;
     align-items: center;
     background-color: #203A4C;
+    transition: background-color 0.2s ease-in;
+}
+
+.heroInfo button:hover .arrows {
+    background-image: url('./images/icons/down-arrows-white.svg');
+    background-color: #55A292;
+}
+
+.heroInfo button:hover {
+    background-color: #5FB4A2;
 }
 
 button span {
@@ -168,6 +182,7 @@ button span {
     background-image: url('./images/icons/down-arrows.svg');
     background-repeat: no-repeat;
     background-position: center;
+    transition: background-color 0.2s ease-in;
 }
 
 /*-------------------------------------------------------------------------------------
@@ -513,6 +528,10 @@ Tablet Media Queries
         flex-direction: column;
         justify-content: center;
         height: 143px;
+    }
+
+    main {
+        padding: 0 40px;
     }
 
     .tablet-desktop {
